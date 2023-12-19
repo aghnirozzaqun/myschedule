@@ -1,0 +1,70 @@
+body {
+    background-color: #a4b9ba;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.daftar-container {
+    width: 80%; /* Ubah lebar untuk ukuran mobile */
+    max-width: 400px; /* Atur lebar maksimum */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #a4b9ba;
+    
+}
+
+h2 {
+    text-align: center; 
+    color: black; 
+    font-size: 25px; /* Ubah ukuran font */
+    font-weight: 600; 
+    margin-bottom: 20px; /* Berikan sedikit ruang di bawah judul */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Ubah jarak antar elemen */
+}
+
+label {
+    color: black;
+    font-size: 14px; /* Ubah ukuran font */
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px; /* Berikan sedikit ruang di bawah label */
+}
+
+input[type="text"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; 
+    background: #D9D9D9; 
+    border-radius: 10px;
+    padding: 10px; /* Ubah padding */
+    box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar input */
+    border: 1px solid #D9D9D9;
+    font-size: 14px; /* Ubah ukuran font */
+}
+
+.button-container {
+    text-align: center; /* Pusatkan tombol */
+}
+
+button {
+    background-color: #435EBE;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px; /* Ubah padding horizontal */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

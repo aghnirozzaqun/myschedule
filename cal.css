@@ -1,0 +1,110 @@
+#calendar {
+  max-width: 800px; /* Atur lebar maksimum kalender */
+  margin: 0 auto; /* Pusatkan kalender di tengah */
+  padding-top: 130px;
+}
+
+/* Gaya untuk pesan */
+body {
+  background-color: white;
+  /* Aktifkan scroll vertikal jika konten melebihi ketinggian layar */
+}
+
+
+/* CSS untuk styling navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .navbar-logo {
+  font-size: 50px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Grenze', serif;
+}
+
+.navbar-extra {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-extra div {
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak vertikal (username di atas email) */
+}
+
+.navbar-extra p {
+  margin: 0; /* Menghapus margin bawaan yang ada pada elemen "p" */
+  font-size: 18px;
+}
+
+.navbar-extra i {
+  margin: 10px; /* Jarak antara "p" dan "i" */
+}
+/* ... (CSS lainnya sesuai kebutuhan) */
+
+
+#info {
+  text-align: center; /* Posisikan pesan di tengah */
+  border: 1px solid #ccc; /* Beri garis kotak pada pesan */
+  border-radius: 15px;
+  padding: 20px; /* Beri jarak dari tepi kotak ke konten dalam pesan */
+  max-width: 800px; /* Atur lebar maksimum pesan */
+  margin: 20px auto; /* Pusatkan pesan di tengah secara horizontal */
+  background-color: #a4b9ba;
+  font-family: 'Hubballi', sans-serif;
+}
+
+#info ul {
+  list-style: none; /* Hilangkan dekorasi bullet dari elemen ul */
+  padding: 0; /* Hapus padding bawaan dari ul */
+  text-align: left; /* Rata kiri konten dalam ul */
+}
+
+#info ul li {
+  padding-bottom: 5px; /* Beri jarak antar elemen li (pesan) */
+}
+
+/* Elemen pemisah antara pesan-pesan */
+.message-separator {
+  border-top: 1px solid #ccc; /* Beri garis pemisah antara pesan pertama dan kedua */
+  margin-top: 10px; /* Beri ruang di atas garis pemisah */
+  padding-top: 5px; /* Beri ruang di bawah garis pemisah */
+}
+
+.message-space {
+  height: 20px; /* Atur tinggi sesuai dengan jumlah jarak yang diinginkan */
+  width: 100%; /* Pastikan elemen mengambil lebar penuh */
+}
+
+/* CSS standar */
+
+/* ... (aturan CSS lainnya) ... */
+
+/* Media Query untuk layar dengan lebar maksimum 600px (perangkat mobile) */
+@media only screen and (max-width: 600px) {
+  /* Ubah tampilan untuk layar dengan lebar maksimum 600px */
+  #calendar {
+    max-width: 90%; /* Perbesar kalender dengan lebar maksimum 90% dari lebar layar */
+    margin: 0 auto; /* Pusatkan kalender di tengah */
+    padding-top: 50px; /* Sesuaikan sesuai kebutuhan */
+  }
+
+  #info {
+    max-width: 90%; /* Perbesar info dengan lebar maksimum 90% dari lebar layar */
+    margin: 20px auto; /* Pusatkan info di tengah secara horizontal */
+    padding: 20px; /* Beri jarak dari tepi kotak ke konten dalam pesan */
+    font-size: 14px; /* Ubah ukuran teks pada perangkat mobile */
+  }
+
+  /* Tambahan aturan CSS untuk responsif pada layar mobile */
+}
